@@ -197,7 +197,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Accueil
           </a>
         </li>
       
@@ -207,7 +207,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -250,7 +250,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/mweb-test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/11/kafka python 客户端安装/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -269,7 +269,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/05/09/mweb-test/" itemprop="url">Unbenannt</a></h1>
+                <a class="post-title-link" href="/2017/05/11/kafka python 客户端安装/" itemprop="url">Non titré</a></h1>
         
 
         <div class="post-meta">
@@ -279,10 +279,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-09T20:57:52+08:00">
-                2017-05-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-11T17:10:32+08:00">
+                2017-05-11
               </time>
             
 
@@ -318,7 +318,11 @@
       
         
           
-            <h1 id="mweb-test"><a href="#mweb-test" class="headerlink" title="mweb-test"></a>mweb-test</h1><h2 id="title2"><a href="#title2" class="headerlink" title="title2"></a>title2</h2><p><img src="/media/pic1.jpeg" alt="pi"></p>
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>confluent-kafka-python 依赖librdkafka, 可以算是官方的python客户端<br><a href="https://github.com/confluentinc/confluent-kafka-python" target="_blank" rel="external">confluent-kafka-python</a><br><a href="https://github.com/edenhill/librdkafka" target="_blank" rel="external">librdkafka</a></p>
+<h1 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h1><h2 id="安装librdkafka"><a href="#安装librdkafka" class="headerlink" title="安装librdkafka"></a>安装librdkafka</h2><p>./configure –prefix=/usr<br>make<br>sudo make install</p>
+<h2 id="安装confluent-kafka-python"><a href="#安装confluent-kafka-python" class="headerlink" title="安装confluent-kafka-python"></a>安装confluent-kafka-python</h2><p>sudo pip install confluent-kafka-python</p>
+<h2 id="测试安装是否成功"><a href="#测试安装是否成功" class="headerlink" title="测试安装是否成功"></a>测试安装是否成功</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">python</div><div class="line"><span class="keyword">import</span> confluent_kafka</div></pre></td></tr></table></figure>
+<p>python<br>import confluent_kafka<br>如果报找不到librdkafka.so, 看下LD_LIBRARY_PATH参数是否包含/usr/lib</p>
 
           
         
@@ -391,7 +395,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-09T20:14:49+08:00">
                 2017-05-09
@@ -519,7 +523,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">articles</span>
               </a>
             </div>
           
@@ -573,11 +577,11 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  Theme -
+  Thème -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
